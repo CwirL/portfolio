@@ -4,7 +4,7 @@ import './home.scss';
 
 export default function Home() {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div className="navbar-wrapper"><Navbar theme={"light"} /></div>
       <div className="home-container">
         <h1 className="title">Wilmer Cantillo</h1>

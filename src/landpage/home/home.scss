@@ -7,6 +7,7 @@ section.home {
   background-position: center;
   height: 100vh;
   min-height: 450px;
+  padding: 0 2rem;
   .navbar-wrapper {
     height: 10vh;
     width: 100%;
@@ -27,6 +28,9 @@ section.home {
 }
 
 @include md {
+  section.home {
+    padding: 0;
+  }
   .home-container {
     margin-left: 15vw;
     margin-right: 25vw;
