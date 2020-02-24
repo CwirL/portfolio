@@ -1,0 +1,13 @@
+@import "./src/styles/abstracts/variables";
+@import "./src/styles/abstracts/mixins";
+
+section.home {
+  background: url('../../assets/images/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  .navbar-wrapper {
+    height: 10vh;
+    width: 100%;
+  }
+}

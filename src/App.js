@@ -1,14 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Landpage from './landpage/Landpage';
 import './styles/main.scss';
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Wilmer Cantillo
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/"><Landpage /></Route>
+      </Switch>
+    </Router>
   );
 }
 
