@@ -6,8 +6,37 @@ section.home {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  min-height: 450px;
   .navbar-wrapper {
     height: 10vh;
     width: 100%;
+  }
+}
+.home-container {
+  margin: 1rem;
+  margin-top: 40vh;
+  .title {
+    color: white;
+    text-align: center;
+  }
+  p {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+  }
+}
+
+@include md {
+  .home-container {
+    margin-left: 15vw;
+    margin-right: 25vw;
+    .title {
+      text-align: start;
+    }
+    p {
+      margin-top: 0;
+      text-align: start;
+      font-size: 1.6em;
+    }
   }
 }
