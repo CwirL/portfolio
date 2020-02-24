@@ -1,0 +1,45 @@
+@import "./src/styles/abstracts/variables";
+@import "./src/styles/abstracts/mixins";
+
+section.about {
+  padding: 1rem;
+  h1.title {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+    img {
+      width: 0.8em;
+      height: 0.8em;
+      cursor: pointer;
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    .column {
+      ul {
+        margin: 1em 0;
+        li {
+          margin: 0.2em;
+        }
+      }
+    }
+  }
+}
+
+@include md {
+  section.about {
+    padding: 2% 6%;
+    p {
+      font-size: 1.4em;
+    }
+    .row {
+      flex-direction: row;
+      .column {
+        width: 50%;
+      }
+    }
+  }
+
+}

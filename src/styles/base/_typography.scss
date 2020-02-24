@@ -123,6 +123,12 @@ h4, .text--md {
   font-size: var(--text-xs);
 }
 
+.subtitle {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: var(--text-md);
+}
+
 p {
   font-family: var(--font-primary);
 }
