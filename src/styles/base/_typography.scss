@@ -1,0 +1,128 @@
+@import "../abstracts/mixins";
+
+@font-face {
+  font-family: "Gravity";
+	src: url("../../assets/fonts/Gravity/Gravity-Regular.otf");
+}
+@font-face {
+  font-family: "Gravity";
+  font-weight: bold;
+	src: url("../../assets/fonts/Gravity/Gravity-Bold.otf");
+}
+@font-face {
+  font-family: "Gravity";
+  font-style: italic;
+	src: url("../../assets/fonts/Gravity/Gravity-Italic.otf");
+}
+@font-face {
+  font-family: "Gravity";
+  font-weight: bold;
+  font-style: italic;
+	src: url("../../assets/fonts/Gravity/Gravity-BoldItalic.otf");
+}
+@font-face {
+  font-family: "Gravity";
+  font-weight: lighter;
+	src: url("../../assets/fonts/Gravity/Gravity-Light.otf");
+}
+@font-face {
+  font-family: "Gravity";
+  font-weight: lighter;
+  font-style: italic;
+	src: url("../../assets/fonts/Gravity/Gravity-LightItalic.otf");
+}
+
+@font-face {
+	font-family: "Graduate";
+	src: url("../../assets/fonts/Graduate/graduate-regular.ttf");
+}
+
+/* -------------------------------- 
+Typography
+-------------------------------- */
+
+@import 'src/styles/abstracts/mixins';
+
+:root {
+  --font-primary: "Gravity";
+  --font-secondary: "Graduate";
+
+  /* set base values */
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.2;
+
+  /* type scale */
+  --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+  /* line-height */
+  --heading-line-height: 1.2;
+  --body-line-height: 1.4;
+}
+
+@include md {
+  :root {
+    --text-base-size: 1.1em;
+  }
+}
+@include lg {
+  :root {
+    --text-base-size: 1.2em;
+  }
+}
+@include xl {
+  :root {
+    --text-base-size: 1.3em;
+  }
+}
+body {
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, form legend {
+  font-family: var(--font-secondary);
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
+}
+
+
+/* text size */
+.text--xxxl {
+  font-size: var(--text-xxxl);
+}
+
+h1, .text--xxl {
+  font-size: var(--text-xxl);
+}
+
+h2, .text--xl {
+  font-size: var(--text-xl);
+}
+
+h3, .text--lg {
+  font-size: var(--text-lg);
+}
+
+h4, .text--md {
+  font-size: var(--text-md);
+}
+
+.text--sm, small {
+  font-size: var(--text-sm);
+}
+
+.text--xs {
+  font-size: var(--text-xs);
+}
+
+p {
+  font-family: var(--font-primary);
+}
