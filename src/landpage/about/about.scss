@@ -2,10 +2,6 @@
 @import "./src/styles/abstracts/mixins";
 
 section.about {
-  padding: 1rem;
-  h1.title {
-    text-align: center;
-  }
   p {
     text-align: justify;
     img {
@@ -30,9 +26,8 @@ section.about {
 
 @include md {
   section.about {
-    padding: 2% 6%;
     p {
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
     .row {
       flex-direction: row;
@@ -42,4 +37,11 @@ section.about {
     }
   }
 
+}
+@include lg {
+  section.about {
+    .column {
+      width: 50%;
+    }
+  }
 }

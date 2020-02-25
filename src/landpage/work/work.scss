@@ -1,0 +1,11 @@
+@import "./src/styles/abstracts/variables";
+@import "./src/styles/abstracts/mixins";
+
+section.my-work {
+  background-color: black;
+  color: white;
+}
+.link-icon {
+  width: 0.8em;
+  height: 0.8em;
+}
