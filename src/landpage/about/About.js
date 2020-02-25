@@ -7,10 +7,10 @@ export default function About() {
     <section className='about container' id='about'>
       <h1 className='title'>About Me</h1>
       <p>
-        I have always like learning new stuff, that’s why i find technology and
-        science so interesting, and also why i study engineering. You can find
+        I have always like learning new stuff, that’s why I find technology and
+        science so interesting, and also why I study engineering. You can find
         my resume here <img src={LinkIcon} alt=""></img> <br/> As a student of 
-        electronics ingeeniring at Universidad del Norte in Barranquilla i 
+        electronics ingeeniring at Universidad del Norte in Barranquilla I 
         developed skills working on multiple projects.
       </p>
       <div className="row">
