@@ -1,0 +1,20 @@
+@import "./src/styles/abstracts/mixins";
+
+section.footer {
+  padding: 2rem 1rem;
+  color: white;
+  background-color: black;
+  text-align: center;
+  .links-container {
+    margin-top: 1rem;
+    img {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+@include md {
+  section.footer {
+    padding: 2% 5%;
+  }
+}

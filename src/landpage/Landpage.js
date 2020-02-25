@@ -3,6 +3,7 @@ import Home from './home/Home';
 import About from './about/About';
 import Work from './work/Work';
 import Future from './future/Future';
+import Footer from './footer/Footer';
 import './landpage.scss';
 
 export default function Landpage() {
@@ -12,6 +13,7 @@ export default function Landpage() {
       <About />
       <Work />
       <Future />
+      <Footer />
     </div>
   )
 }
