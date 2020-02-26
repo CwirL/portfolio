@@ -28,15 +28,15 @@ export default function Navbar({ theme }) {
     <section className={"navbar"} ref={navRef}>
       <div className={"sidenav " + (active ? "active" : "")}>
         <div><img src={Me} alt="" /></div>
-        <div><a href="#home">Wilmer Cantillo</a></div>
-        <div><a href="#home">Software</a></div>
+        <div><a href="/">Wilmer Cantillo</a></div>
+        <div><a href="/software">Software</a></div>
         <div><a href="#home">Contact</a></div>
       </div>
       <img className={"menu " + (sticky ? "sticky" : "")}  src={theme === "dark" ? DarkLogo : LightLogo} alt="" onClick={handleActive}/>
       <h2>WC</h2>
-      <nav className={"navigation " + (sticky ? "sticky" : "")}>
-        <a href="#home">Wilmer Cantillo</a>
-        <a className="middle" href="#home">Software</a>
+      <nav className={"navigation" + (sticky ? " sticky" : "") + (theme === "dark" ? " dark" : "")}>
+        <a href="/">Wilmer Cantillo</a>
+        <a className="middle" href="/software">Software</a>
         <a href="#home">Contact</a>
       </nav>
     </section>

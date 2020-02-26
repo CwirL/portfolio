@@ -76,7 +76,6 @@ nav.navigation {
     display: none;
   }
 
-
   nav.navigation {
     transition: color ease 1s;
     padding: 0 5rem;
@@ -93,6 +92,11 @@ nav.navigation {
     }
     .middle {
       margin-right: auto;
+    }
+  }
+  nav.dark {
+    a {
+      color: black;
     }
   }
   nav.sticky {

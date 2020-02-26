@@ -1,0 +1,27 @@
+@import "./src/styles/abstracts/variables";
+@import "./src/styles/abstracts/mixins";
+
+section.repository {
+  height: 100vh;
+  min-height: 450px;
+  padding: 0 2rem;
+  .navbar-wrapper {
+    height: 10vh;
+    width: 100%;
+  }
+  .table-wrapper {
+    overflow-x: auto;
+  }
+}
+
+@include md {
+  .table-wrapper {
+    padding: 0 10%;
+  }
+}
+
+@include lg {
+  .table-wrapper {
+    padding-block-end: 0 15%;
+  }
+}
