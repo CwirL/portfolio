@@ -1,0 +1,49 @@
+{
+  "subtitle": "Caja Naranja",
+  "description": "Built web app for flexible warehousing.",
+  "lang": "Angular - Node.js",
+  "date": "Dec 2019",
+
+  "type": "Start-Up Project",
+  "goal": "Web application (ecommerce), company landing page and delivery service.",
+  "stack": [
+    {
+      "title": "Front end",
+      "subtitle": "Angular – Sass – Google Maps API",
+      "items": [
+        "Single page application",
+        "User sign in and sign out",
+        "Real time warehouse location",
+        "Reduced sass 7-1 pattern"
+      ]
+    },
+    {
+      "title": "Backend",
+      "subtitle": "Nodejs – Express – Nodemailer - mercadopago API – Passportjs",
+      "items": [
+        "Paginated warehouse data over REST API",
+        "Authentication and authorization service with JWT and passport",
+        "Credit card payment service with Mercadopago API",
+        "Notification service over email with nodemailer"
+      ]
+    },
+    {
+      "title": "Design",
+      "subtitle": "Figma – Adobe Photoshop",
+      "items": [
+        "User interface and recognize all components for modular structure",
+        "Build and edit background image with photoshop"
+      ]
+    },
+    {
+      "title": "Database",
+      "subtitle": "AWS RDS - MySQL"
+    },
+    {
+      "title": "Deployment",
+      "subtitle": "AWS EC2 - Nginx reverse proxy - CPANEL - Apache server"
+    }
+  ],
+  "github": null,
+  "website": null
+}

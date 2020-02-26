@@ -1,5 +1,5 @@
 import React from 'react';
-import Projects from './projects';
+import Projects from '../projects';
 import './table.scss';
 
 export default function Table() {
@@ -19,7 +19,7 @@ export default function Table() {
         <tr key={id}>
           <td>{project.title}</td>
           <td>{project.description}</td>
-          <td>{project.stack}</td>
+          <td>{project.lang}</td>
           <td>{project.date}</td>
         </tr>)}
       </tbody>

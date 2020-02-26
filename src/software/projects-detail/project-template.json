@@ -1,0 +1,42 @@
+{
+  "title": "",
+  "description": "",
+  "lang": "",
+  "date": "",
+
+  "type": "",
+  "goal": "",
+  "stack": [
+    {
+      "title": "Front end",
+      "subtitle": "",
+      "items": [
+        ""
+      ]
+    },
+    {
+      "title": "Backend",
+      "subtitle": "",
+      "items": [
+        ""
+      ]
+    },
+    {
+      "title": "Design",
+      "subtitle": "",
+      "items": [
+        ""
+      ]
+    },
+    {
+      "title": "Database",
+      "subtitle": ""
+    },
+    {
+      "title": "Deployment",
+      "subtitle": ""
+    }
+  ],
+  "github": null,
+  "website": null
+}

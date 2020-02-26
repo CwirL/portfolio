@@ -4,7 +4,9 @@
 section.repository {
   height: 100vh;
   min-height: 450px;
-  padding: 0 2rem;
+  h1.title {
+    margin-bottom: 1em;
+  }
   .navbar-wrapper {
     height: 10vh;
     width: 100%;
