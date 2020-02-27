@@ -1,21 +1,12 @@
 import React, { useState } from 'react'
+
+import LinkIcon from 'assets/icons/link-icon.svg';
 import Projects from '../projects-detail';
 import Dot from './dot/Dot';
 import './projectsDetail.scss';
 
 export default function ProjectsDetail() {
-  const n = Projects.length;
   const [projectIndex, setprojectIndex] = useState(0);
-  
-  function nextProject(next) {
-    let idxHolder = projectIndex.valueOf(); 
-    idxHolder += next;
-    if (idxHolder >= n)
-      idxHolder = 0
-    if (idxHolder < 0)
-      idxHolder = n-1
-    setprojectIndex(idxHolder);
-  }
 
   function setCurrentProject(e) {
     setprojectIndex(parseInt(e.target.id));
@@ -24,7 +15,7 @@ export default function ProjectsDetail() {
   function listItems(list) {
     const itemList = []
     list.map((item, id) => {
-      itemList.push(<li key={id}>{item}</li>);
+      return itemList.push(<li key={id}>{item}</li>);
     })
     return <ul>{itemList}</ul>
   }
@@ -32,9 +23,9 @@ export default function ProjectsDetail() {
   function projectStack(stack) {
     const stackDivs = [];
     stack.map((field, id) => {
-      stackDivs.push(
+      return stackDivs.push(
         <div key={id} className={field.title.toLowerCase()}>
-          <div className="subtitle2">{field.title}</div>
+          <div className="subtitle2">{field.title} {field.title === "Design" && !!field.design_link  ? <a href={field.design_link} target="_blank" rel="noopener noreferrer"><img className="link-icon" src={LinkIcon} alt=""/></a> :"" } </div>
           <div>{field.subtitle}</div>
           {field.items ? listItems(field.items) : ""}
         </div>
@@ -43,17 +34,15 @@ export default function ProjectsDetail() {
     return <div className="stack-container">{stackDivs}</div>
   }
 
-  function moveTop() {
-    
-  }
   return (
     <section className="project-detail" id="project-detail">
       <h1 className="title">Projects on Detail</h1>
       <div className="projects">
         <div key="id" className="projects-container carousel-container">
           {Projects.map((project, id) =>
-            <div className={"project"+ (id === projectIndex ? " active" : "")} key={id}>
-              <div><span className="subtitle2">Title: </span><span>{project.title}</span></div>
+          {
+            return <div className={"project"+ (id === projectIndex ? " active" : "")} key={id}>
+              <div><span className="subtitle2">Title: </span><span>{project.title} {!!project.github ? <a href={project.github} target="_blank" rel="noopener noreferrer"><img className="link-icon" src={LinkIcon} alt=""/></a> :"" }</span></div>
               <div><span className="subtitle2">Type: </span><span>{project.type}</span></div>
               <div><span className="subtitle2">Description: </span><span className="break">{project.description}</span></div>
               <div><span className="subtitle2">Goal: </span><span className="break">{project.goal}</span></div>
@@ -65,7 +54,7 @@ export default function ProjectsDetail() {
                 </div>
               }
             </div>            
-          )}
+})}
         </div>
       </div>
       <div className="dot-container">

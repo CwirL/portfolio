@@ -1,9 +1,10 @@
 import React from 'react';
+
+import LinkIcon from 'assets/icons/link-dark-icon.svg';
 import Projects from '../projects-detail';
 import './table.scss';
 
 export default function Table() {
-  console.log(Projects);
   return (
     <table className="repository">
       <thead>
@@ -17,7 +18,7 @@ export default function Table() {
       <tbody>
         {Projects.map((project, id) => 
         <tr key={id}>
-          <td>{project.title}</td>
+          <td>{project.title} {!!project.website ? <a href={project.website} target="_blank" rel="noopener noreferrer"><img className="link-icon" src={LinkIcon} alt=""/></a> :"" }</td>
           <td>{project.description}</td>
           <td>{project.lang}</td>
           <td>{project.date}</td>

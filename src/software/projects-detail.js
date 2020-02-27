@@ -1,4 +1,40 @@
 const Projects = [
+  {
+    "web": true,
+    "title": "My Website",
+    "description": "Portfolio",
+    "lang": "React",
+    "date": "Feb 2020",
+  
+    "type": "Personal Project",
+    "goal": "Share personal profile and projects.",
+    "stack": [
+      {
+        "title": "Front end",
+        "subtitle": "React - Sass",
+      },
+      {
+        "title": "Backend",
+        "subtitle": "N/A"
+      },
+      {
+        "title": "Design",
+        "design_link": "https://www.figma.com/file/15DhUztEywqAXL1Hb5Wzsu/portfolio?node-id=0%3A1",
+        "subtitle": "Figma"
+      },
+      {
+        "title": "Database",
+        "subtitle": "N/A"
+      },
+      {
+        "title": "Deployment",
+        "subtitle": "Github Pages"
+      }
+    ],
+    "github": "https://github.com/CwirL/portfolio",
+    "website": null,
+
+  },
   { //
     "web": true,
     "title": "Orange Logistica SAS",
@@ -29,6 +65,7 @@ const Projects = [
       {
         "title": "Design",
         "subtitle": "Figma – Adobe Illustrator",
+        "design_link": "https://www.figma.com/file/Br34Q743kXKGWEKu9WhtNG/orange?node-id=0%3A1",
         "items": [
           "Icons for services and some iterations for the logo on illustrator",
           "User interface on Figma"
@@ -44,7 +81,7 @@ const Projects = [
       }
     ],
     "github": null,
-    "website": null
+    "website": null,
   },
   {
     "web": false,
@@ -62,7 +99,7 @@ const Projects = [
       ]
     },
     "github": "https://github.com/CwirL/pathfinding-visualizer",
-    "website": "https://cwirl.github.io/pathfinding-visualizer/"
+    "website": "https://cwirl.github.io/pathfinding-visualizer/",
   },
   { //
     "web": true,
@@ -97,6 +134,7 @@ const Projects = [
       {
         "title": "Design",
         "subtitle": "Figma – Adobe Photoshop",
+        "design_link": "https://www.figma.com/file/1SAUghYzdS9fmC4LVDnCjh/caja-Naranja?node-id=0%3A1",
         "items": [
           "User interface and recognize all components for modular structure",
           "Build and edit background image with photoshop"
@@ -112,7 +150,7 @@ const Projects = [
       }
     ],
     "github": null,
-    "website": "https://cajanaranja.com.co/"
+    "website": "https://cajanaranja.com.co/",
   },
   { //
     "web":true,
@@ -144,6 +182,7 @@ const Projects = [
       },
       {
         "title": "Design",
+        "design_link": null,
         "subtitle": "Adobe XD"
       },
       {
@@ -156,7 +195,7 @@ const Projects = [
       }
     ],
     "github": "https://github.com/CwirL/TrackApp/",
-    "website": null
+    "website": null,
   },
   { //
     "web": true, 
@@ -186,6 +225,7 @@ const Projects = [
       },
       {
         "title": "Design",
+        "design_link": null,
         "subtitle": "N/A"
       },
       {
@@ -198,7 +238,7 @@ const Projects = [
       }
     ],
     "github": "https://github.com/CwirL/Global-Track",
-    "website": "http://52.70.133.255//DesignProject/index.php"
+    "website": "http://52.70.133.255//DesignProject/index.php",
   },
   { //
     "web": false,
@@ -219,7 +259,7 @@ const Projects = [
       ]
     },
     "github": "https://github.com/CwirL/signal-processing",
-    "website": null
+    "website": null,
   },
   { //
     "title": "Parabolic motion simulation",
@@ -239,10 +279,8 @@ const Projects = [
       ]
     },
     "github": "https://github.com/CwirL/parabolic-motion-simulation",
-    "website": null
+    "website": null,
   }
-
-
 ];
 
 export default Projects;
