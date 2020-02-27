@@ -1,5 +1,5 @@
 import React from 'react';
-import Projects from '../projects';
+import Projects from '../projects-detail';
 import './table.scss';
 
 export default function Table() {

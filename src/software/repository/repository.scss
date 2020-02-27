@@ -12,18 +12,14 @@ section.repository {
     width: 100%;
   }
   .table-wrapper {
+    margin: 0 1rem;
     overflow-x: auto;
   }
 }
 
-@include md {
-  .table-wrapper {
-    padding: 0 10%;
-  }
-}
 
-@include lg {
+@include xl {
   .table-wrapper {
-    padding-block-end: 0 15%;
+    margin: 0 4% !important;
   }
 }

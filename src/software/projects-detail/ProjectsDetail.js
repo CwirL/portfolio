@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import Projects from './projects-detail';
+import React, { useState } from 'react'
+import Projects from '../projects-detail';
 import Dot from './dot/Dot';
 import './projectsDetail.scss';
 
 export default function ProjectsDetail() {
   const n = Projects.length;
-  const showProjectsArr = [];
   const [projectIndex, setprojectIndex] = useState(0);
   
   function nextProject(next) {
@@ -34,7 +33,7 @@ export default function ProjectsDetail() {
     const stackDivs = [];
     stack.map((field, id) => {
       stackDivs.push(
-        <div key={id}>
+        <div key={id} className={field.title.toLowerCase()}>
           <div className="subtitle2">{field.title}</div>
           <div>{field.subtitle}</div>
           {field.items ? listItems(field.items) : ""}
@@ -44,8 +43,11 @@ export default function ProjectsDetail() {
     return <div className="stack-container">{stackDivs}</div>
   }
 
+  function moveTop() {
+    
+  }
   return (
-    <section className="project-detail">
+    <section className="project-detail" id="project-detail">
       <h1 className="title">Projects on Detail</h1>
       <div className="projects">
         <div key="id" className="projects-container carousel-container">
@@ -53,11 +55,16 @@ export default function ProjectsDetail() {
             <div className={"project"+ (id === projectIndex ? " active" : "")} key={id}>
               <div><span className="subtitle2">Title: </span><span>{project.title}</span></div>
               <div><span className="subtitle2">Type: </span><span>{project.type}</span></div>
-              <div><span className="subtitle2">Description</span><br/><span>{project.description}</span></div>
-              <div><span className="subtitle2">Goal</span><br/><span>{project.goal}</span></div>
+              <div><span className="subtitle2">Description: </span><span className="break">{project.description}</span></div>
+              <div><span className="subtitle2">Goal: </span><span className="break">{project.goal}</span></div>
               <h1 className="subtitle">Technology stack</h1>
-              {projectStack(project.stack)}
-            </div>
+              {project.web ?  projectStack(project.stack):
+                <div>
+                  <div className="subtitle2">{project.stack.subtitle}</div>
+                  {listItems(project.stack.items)}
+                </div>
+              }
+            </div>            
           )}
         </div>
       </div>

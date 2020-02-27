@@ -7,7 +7,7 @@ import './footer.scss';
 export default function Footer() {
   return (
     <section className="footer">
-      <div className="subtitle">STAY CONNECTED</div>
+      <div className="subtitle2">STAY CONNECTED</div>
       <div className="links-container">
         <a href="#"><img src={EmailIcon} alt=""/></a>
         <a href="https://github.com/CwirL/" target="_blank" rel="noopener noreferrer"><img src={GithubIcon} alt=""/></a>

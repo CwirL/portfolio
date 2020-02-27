@@ -1,7 +1,8 @@
 const Projects = [
-  {// First Project
+  { //
+    "web": true,
     "title": "Orange Logistica SAS",
-    "description": "Built React web application and node.js telegram bot for delivery service.",
+    "description": "Built web application and node.js telegram bot for delivery service.",
     "lang": "Angular - Node.js",
     "date": "Feb 2020",
 
@@ -9,7 +10,7 @@ const Projects = [
     "goal": "Web application, company landing page and delivery service",
     "stack": [
       {
-        "title": "Front end",
+        "title": "Frontend",
         "subtitle": "React – SASS - Google Maps API",
         "items": [
           "Single page application",
@@ -45,7 +46,26 @@ const Projects = [
     "github": null,
     "website": null
   },
-  {//Second project
+  {
+    "web": false,
+    "title": "Pathfinding visualizer",
+    "description": "Built web application for visualizing pathfinding in 3D.",
+    "lang": "React",
+    "date": "Dec 2019",
+  
+    "type": "Personal Project",
+    "goal": "Learn data structures and algorithms",
+    "stack": {
+      "subtitle": "React",
+      "items": [
+        "Implement Dijkstra’s algorithm for pathfinding visualization"
+      ]
+    },
+    "github": "https://github.com/CwirL/pathfinding-visualizer",
+    "website": "https://cwirl.github.io/pathfinding-visualizer/"
+  },
+  { //
+    "web": true,
     "title": "Caja Naranja",
     "description": "Built web app for flexible warehousing.",
     "lang": "Angular - Node.js",
@@ -55,7 +75,7 @@ const Projects = [
     "goal": "Web application (ecommerce), company landing page and delivery service.",
     "stack": [
       {
-        "title": "Front end",
+        "title": "Frontend",
         "subtitle": "Angular – Sass – Google Maps API",
         "items": [
           "Single page application",
@@ -92,9 +112,54 @@ const Projects = [
       }
     ],
     "github": null,
+    "website": "https://cajanaranja.com.co/"
+  },
+  { //
+    "web":true,
+    "title": "Track App",
+    "description": "Built web application to visualize real time and historical geolocation data of vehicles.",
+    "lang": "MERN",
+    "date": "Jun 2019",
+  
+    "type": "Personal Project",
+    "goal": "Design and implement a solution for vehicular telemetry.",
+    "stack": [
+      {
+        "title": "Frontend",
+        "subtitle": "React – semantic UI - Google Maps API",
+        "items": [
+          "Single page application",
+          "User sign in and sign out",
+          "Real time warehouse location",
+          "Statistic charts"
+        ]
+      },
+      {
+        "title": "Backend",
+        "subtitle": "Nodejs – Express – mongoose",
+        "items": [
+          "REST API for user authentication and vehicle location",
+          "MVC pattern"
+        ]
+      },
+      {
+        "title": "Design",
+        "subtitle": "Adobe XD"
+      },
+      {
+        "title": "Database",
+        "subtitle": "Mongo DB"
+      },
+      {
+        "title": "Deployment",
+        "subtitle": "AWS EC2 - Apache server"
+      }
+    ],
+    "github": "https://github.com/CwirL/TrackApp/",
     "website": null
   },
-  {//Third Project
+  { //
+    "web": true, 
     "title": "Global Track",
     "description": "Built web application to visualize real time and historical geolocation data of vehicles.",
     "lang": "Jquery - LAMP",
@@ -104,7 +169,7 @@ const Projects = [
     "goal": "Design and implement a solution for vehicular telemetry.",
     "stack": [
       {
-        "title": "Front end",
+        "title": "Frontend",
         "subtitle": "Jquery - Bootstrap - Leaflet",
         "items": [
           "Single page application",
@@ -132,9 +197,51 @@ const Projects = [
         "subtitle": "AWS EC2 – LAMP"
       }
     ],
-    "github": null,
+    "github": "https://github.com/CwirL/Global-Track",
+    "website": "http://52.70.133.255//DesignProject/index.php"
+  },
+  { //
+    "web": false,
+    "title": "Cardiac signals analysis",
+    "description": "Built algorithm to process and analyze audio cardiac signals.",
+    "lang": "MATLAB",
+    "date": "May 2018",
+  
+    "type": "Academic Project",
+    "goal": "Recognize cardiac cycle intervals (systole - diastole). Energy and power analysis of signals on time and frequency domain",
+    "stack": {
+      "subtitle": "Matlab",
+      "items":  [
+        "Cardiac cycle duration",
+        "Relation between cardiac cycle intervals (systole – diastole – s1 – s2)",
+        "Max and min amplitudes at different cycle intervals",
+        "Energy and power at different cycle intervals"
+      ]
+    },
+    "github": "https://github.com/CwirL/signal-processing",
+    "website": null
+  },
+  { //
+    "title": "Parabolic motion simulation",
+    "description": "Built navigable 3D display of canon animation.",
+    "lang": "Python",
+    "date": "Nov 2015",
+  
+    "type": "Academic Project",
+    "goal": "Implement projectile motion equations within an animation/algorithm with python.",
+    "stack": {
+      "subtitle": "Python - Vpython",
+      "items": [
+        "Navigable 3D display of canon",
+        "Relation between cardiac cycle intervals (systole – diastole – s1 – s2)",
+        "Max and min amplitudes at different cycle intervals",
+        "Energy and power at different cycle intervals"
+      ]
+    },
+    "github": "https://github.com/CwirL/parabolic-motion-simulation",
     "website": null
   }
+
 
 ];
 

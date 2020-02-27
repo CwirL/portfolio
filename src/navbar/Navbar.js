@@ -32,7 +32,7 @@ export default function Navbar({ theme }) {
         <div><a href="/software">Software</a></div>
         <div><a href="#home">Contact</a></div>
       </div>
-      <img className={"menu " + (sticky ? "sticky" : "")}  src={theme === "dark" ? DarkLogo : LightLogo} alt="" onClick={handleActive}/>
+      <img className={"menu " + (sticky ? "sticky" : "")}  src={theme !== "dark" || sticky ?  LightLogo : DarkLogo} alt="" onClick={handleActive}/>
       <h2>WC</h2>
       <nav className={"navigation" + (sticky ? " sticky" : "") + (theme === "dark" ? " dark" : "")}>
         <a href="/">Wilmer Cantillo</a>
