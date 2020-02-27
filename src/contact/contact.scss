@@ -1,0 +1,23 @@
+@import "./src/styles/abstracts/mixins";
+
+section.contact {
+  .form-wrapper {
+    padding: 2em;
+  }
+}
+
+@include md {
+  section.contact {
+    .form-wrapper {
+      padding: 6% 10%;
+    }
+  }
+}
+
+@include lg {
+  section.contact {
+    .form-wrapper {
+      padding: 4% 15%;
+    }
+  }
+}

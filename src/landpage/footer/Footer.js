@@ -9,7 +9,7 @@ export default function Footer() {
     <section className="footer">
       <div className="subtitle2">STAY CONNECTED</div>
       <div className="links-container">
-        <a href="#"><img src={EmailIcon} alt=""/></a>
+        <a href="/contact"><img src={EmailIcon} alt=""/></a>
         <a href="https://github.com/CwirL/" target="_blank" rel="noopener noreferrer"><img src={GithubIcon} alt=""/></a>
         <a href="https://www.linkedin.com/in/wilmer-cantillo-9a19b4171/" target="_blank" rel="noopener noreferrer"><img src={LinkedInIcon} alt=""/></a>
       </div>  
