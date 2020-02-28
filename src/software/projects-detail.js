@@ -2,7 +2,7 @@ const Projects = [
   {
     "web": true,
     "title": "My Website",
-    "description": "Portfolio",
+    "description": "Personal website.r",
     "lang": "React",
     "date": "Feb 2020",
   
@@ -28,7 +28,7 @@ const Projects = [
       },
       {
         "title": "Deployment",
-        "subtitle": "Github Pages"
+        "subtitle": "Heroku"
       }
     ],
     "github": "https://github.com/CwirL/portfolio",
