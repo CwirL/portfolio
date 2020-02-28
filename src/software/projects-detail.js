@@ -2,7 +2,7 @@ const Projects = [
   {
     "web": true,
     "title": "My Website",
-    "description": "Personal website.r",
+    "description": "Personal website",
     "lang": "React",
     "date": "Feb 2020",
   
