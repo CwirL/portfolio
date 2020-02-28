@@ -13,7 +13,7 @@ export default function Work() {
       </p>
       <div className="subtitle">Projects I’m currently working on</div>
       <ul>
-        <li><b>Orange Logistica <a href="#home"><img className="link-icon" src={LinkIcon} alt=""/></a></b> <br/> Description: Digital platform for supply chain management.</li>
+        <li><b>Orange Logistica </b> <br/> Description: Digital platform for supply chain management.</li>
         <li><b>Caja Naranja <a href="https://cajanaranja.com.co/" target="_blank" rel="noopener noreferrer"><img className="link-icon" src={LinkIcon} alt=""/></a> </b><br/>Description: Web application for on-demmand warehousing.</li>
       </ul>
     </section>

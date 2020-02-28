@@ -9,7 +9,7 @@ export default function About() {
       <p>
         I have always like learning new stuff, that’s why I find technology and
         science so interesting, and also why I study engineering. You can find
-        my resume here <img src={LinkIcon} alt=""></img> <br/> As a student of 
+        my resume here <a href="https://www.dropbox.com/s/oq6efezwyrwc88g/Resume.pdf?dl=0" target="_blank" rel="noopener noreferrer"><img src={LinkIcon} alt=""></img></a> <br/> As a student of 
         electronics ingeeniring at Universidad del Norte in Barranquilla I 
         developed skills working on multiple projects.
       </p>
