@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from 'navbar/Navbar';
 import ContactForm from './contact-form/ContactForm';
+import Footer from '../landpage/footer/Footer';
 import './contact.scss';
 
 export default function Contact() {
@@ -9,6 +10,7 @@ export default function Contact() {
       <Navbar theme={"dark"} />
       <h1 className="title">Send Me An Email</h1>
       <div className="form-wrapper"><ContactForm /></div>
+      <Footer />
     </section>
   )
 }

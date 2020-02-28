@@ -7,8 +7,7 @@ export default function Work() {
     <section className='my-work container' id='work'>
       <h1 className='title'>My Work</h1>
       <p>
-      You can see detail description of my projects in software section
-      <a href="#home"><img className="link-icon" src={LinkIcon} alt=""/></a> <br/>
+      You can see detail description of my projects in projects section.
       Currently I spend a lot of time building software and 
       developing business ideas with my friends and partners.
       </p>

@@ -29,14 +29,14 @@ export default function Navbar({ theme }) {
       <div className={"sidenav " + (active ? "active" : "")}>
         <div><img src={Me} alt="" /></div>
         <div><a href="/">Wilmer Cantillo</a></div>
-        <div><a href="/software">Software</a></div>
+        <div><a href="/projects">Projects</a></div>
         <div><a href="/contact">Contact</a></div>
       </div>
       <img className={"menu " + (sticky ? "sticky" : "")}  src={theme !== "dark" || sticky ?  LightLogo : DarkLogo} alt="" onClick={handleActive}/>
       <h2>WC</h2>
       <nav className={"navigation" + (sticky ? " sticky" : "") + (theme === "dark" ? " dark" : "")}>
         <a href="/">Wilmer Cantillo</a>
-        <a className="middle" href="/software">Software</a>
+        <a className="middle" href="/projects">Projects</a>
         <a href="/contact">Contact</a>
       </nav>
     </section>

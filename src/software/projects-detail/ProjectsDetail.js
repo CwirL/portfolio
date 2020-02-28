@@ -6,7 +6,7 @@ import Dot from './dot/Dot';
 import './projectsDetail.scss';
 
 export default function ProjectsDetail() {
-  const [projectIndex, setprojectIndex] = useState(0);
+  const [projectIndex, setprojectIndex] = useState(3);
 
   function setCurrentProject(e) {
     setprojectIndex(parseInt(e.target.id));

@@ -242,6 +242,25 @@ const Projects = [
   },
   { //
     "web": false,
+    "title": "Modbus LoRa communication",
+    "description": "Data acquisition from a shark-100 electrical analyzer over Modbus protocol with Arduino and data transmission over LoRa protocol with Seeeduino LoRaWan devices.",
+    "lang": "Arduino",
+    "date": "Jul 2018",
+  
+    "type": "Academic Project",
+    "goal": "Extract measurement data from shark 100 with Arduino and over MODBUS protocol and transmit data over LoRa protocol with RF module.",
+    "stack": {
+      "subtitle": "Arduino",
+      "items":  [
+        "Extract data from registers of shark analyzer",
+        "Implement algorithm to pack data and setup transmitter and receptor"
+      ]
+    },
+    "github": "https://github.com/CwirL/modbus-lora-communication",
+    "website": null,
+  },
+  { //
+    "web": false,
     "title": "Cardiac signals analysis",
     "description": "Built algorithm to process and analyze audio cardiac signals.",
     "lang": "MATLAB",

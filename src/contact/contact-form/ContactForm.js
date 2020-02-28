@@ -56,12 +56,12 @@ export default function ContactForm() {
   }
 
   function submitForm(e) {
-    e.preventDefault();
     console.log(state);
     if (validate()) {
       setState(initialState);
       return true;
     } else {
+      e.preventDefault();
       return false;
     }
   }
