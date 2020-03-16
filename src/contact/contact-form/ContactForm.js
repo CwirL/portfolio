@@ -7,7 +7,7 @@ export default function ContactForm() {
     email: "",
     phone: "",
     subject: "",
-    reason: "",
+    reason: "Just to say hi",
     message: "",
 
     nameError: "",
@@ -23,12 +23,9 @@ export default function ContactForm() {
     "Other"
   ];
   function handleInputChange(event) {
-    console.log(state);
     const { name, value } = event.target;
-    if (name === "name")
-      setState(state => ({ ...state,nameError: "" }));
-    if (name === "email")
-      setState(state => ({ ...state, emailError: "" }));
+    if (name === "name") setState(state => ({ ...state, nameError: "" }));
+    if (name === "email") setState(state => ({ ...state, emailError: "" }));
 
     setState(state => ({ ...state, [name]: value }));
   }
@@ -37,36 +34,47 @@ export default function ContactForm() {
     let nameError = "";
     let emailError = "";
     let error = false;
-    if (!state.name){
+    if (!state.name) {
       nameError = "Your name is required";
       error = true;
     }
-    if (!state.email){
+    if (!state.email) {
       emailError = "Your email is required";
       error = true;
     }
-    console.log(emailError);
-
     if (error) {
       console.log(emailError);
-      setState({...state, emailError, nameError});
+      setState({ ...state, emailError, nameError });
       return false;
-    } 
+    }
     return true;
   }
 
-  function submitForm(e) {
-    console.log(state);
+  async function submitForm(e) {
+    e.preventDefault();
     if (validate()) {
-      setState(initialState);
-      return true;
+      try {
+        setState(initialState);
+        const contactData = { ...state };
+        delete contactData["nameError"];
+        delete contactData["emailError"];
+        const apiUrl = "https://apiwilmercantillo.herokuapp.com/send";
+        await fetch(apiUrl, {
+          method: "POST",
+          body: JSON.stringify(contactData),
+          headers: { "Content-Type": "application/json" }
+        });
+        return true;
+      } catch (error) {
+        console.log(error);
+      }
     } else {
-      e.preventDefault();
       return false;
     }
   }
   return (
-    <form className='contact-form' action="mailto:will.canti2697@gmail.com" method="post" encType="text/plain">
+    //  action="mailto:will.canti2697@gmail.com" method="post" encType="text/plain"
+    <form className='contact-form'>
       <label>
         Name*
         <input
@@ -74,7 +82,7 @@ export default function ContactForm() {
           type='text'
           onChange={handleInputChange}
           value={state.name}
-          className = {!!state.nameError ? "invalid" : ""}
+          className={!!state.nameError ? "invalid" : ""}
         />
         <span>{state.nameError}</span>
       </label>
@@ -85,7 +93,7 @@ export default function ContactForm() {
           type='text'
           onChange={handleInputChange}
           value={state.email}
-          className = {!!state.emailError ? "invalid" : ""}
+          className={!!state.emailError ? "invalid" : ""}
         />
         <span>{state.emailError}</span>
       </label>
@@ -111,7 +119,12 @@ export default function ContactForm() {
         Reason*
         <select name='reason' onChange={handleInputChange} value={state.reason}>
           {reasons.map((reason, id) => (
-            <option key={id} className={state.reason === reason ? "selected" : ""}>{reason}</option>
+            <option
+              key={id}
+              className={state.reason === reason ? "selected" : ""}
+            >
+              {reason}
+            </option>
           ))}
         </select>
       </label>
@@ -125,7 +138,7 @@ export default function ContactForm() {
           value={state.message}
         ></textarea>
       </label>
-      <br/>
+      <br />
       <button type='submit' onClick={submitForm}>
         Submit
       </button>
